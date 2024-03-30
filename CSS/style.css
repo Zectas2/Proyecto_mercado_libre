@@ -1,15 +1,19 @@
+/*index.html*/
+
 #titulo-principal{
     text-align: center;
     text-transform: uppercase;
+    padding-top: 10rem;
 
 }
+
 
 .barra-busqueda{
     text-align: center;
 }
 
 .contenedor{
-    width: 50rem;
+    max-width: 50rem;
     margin-top: 15px;
     margin-bottom: 0;
     margin-left: auto;
@@ -20,19 +24,183 @@
     background-color: yellow;
 }
 
-.nav-bar{
-    
+.nav-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+ @media (min-width: 768px){
+    .nav-bar{
+        flex-direction: row;
+    }
+    .login{
+        flex-direction: row;
+    }
+
+ }
+.nav-bar a{
     padding-top: 1rem;
     padding-bottom: 1rem;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: black;
+    text-decoration:none;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.login{
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
+    align-items: end;
 
+}
+.login a{
+    margin-right: 5rem;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 1rem;
+    color: black;
+    text-decoration:none;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.login a:hover{
+    background-color: orange;
+    color: aliceblue;
+}
+.nav-bar a:hover{
+    background-color: orange;
+    color: aliceblue;
+}
+
+.main-producto-tarjeta-seccion{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    border-radius: 5rem;
+}
+
+.main-mystery-box h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 
 }
 
-.nav-bar a{
-    
+.tarjetas-mystery-box{
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem;
+    border-radius: 5rem;
+}
+
+/*IniciarSesion.html*/
+.is-titulo{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5rem;
+    background-color: yellow;
+}
+.formulario{
+    background-color: sandybrown;
+    width: min(60rem , 100%);
+    margin: 0 auto 10rem auto;
+    padding: 5rem;
+    border-radius: 1rem;
+}
+
+.formulario fieldset{
+    border: none;
+}
+
+.formulario legend{
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700px;
+    margin-bottom: 2rem;
     color: black;
-    text-decoration:none;
+}
+
+.formulario-campos{
+
+}
+
+.campo{
+    margin-bottom: 1rem;
+}
+
+.campo label{
+    color: black;
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+.campo input{
+    background-color: blanchedalmond;
+    padding: 1.5rem;
+    border-radius: .5rem;
+
+}
+
+.boton{
+    border-radius: .5rem;
+    background-color: chocolate;
+    color: black;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 90%;
+    text-align: center;
+}
+.boton:hover{
+    cursor: pointer;
+
+}
+.formulario-boton{
+    width: 100%;
+}
+
+/*nuevaCuenta.html*/
+.nc-titulo{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5rem;
+    background-color: yellow;
+}
+
+.formulario-crearCuenta{
+    background-color: sandybrown;
+    width: min(60rem , 100%);
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.formulario-crearCuenta fieldset{
+    border: none;
+}
+
+.formulario-crearCuenta legend{
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700px;
+    margin-bottom: 2rem;
+    color: black;
+}
+
+.crearCuenta-campos{
 
 }
