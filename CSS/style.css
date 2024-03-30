@@ -1,0 +1,38 @@
+#titulo-principal{
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.barra-busqueda{
+    text-align: center;
+}
+
+.contenedor{
+    width: 50rem;
+    margin-top: 15px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-background{
+    background-color: yellow;
+}
+
+.nav-bar{
+    
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+
+.nav-bar a{
+    
+    color: black;
+    text-decoration:none;
+
+}
