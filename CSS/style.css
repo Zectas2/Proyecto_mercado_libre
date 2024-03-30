@@ -227,3 +227,117 @@
     padding: 2rem;
     margin: 2rem;
 }
+
+/*ejemploCarrito.html*/
+.sombraV2{
+    -webkit-box-shadow: -1px 4px 10px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 4px 10px 3px rgba(0,0,0,0.75);
+    box-shadow: -1px 4px 10px 3px rgba(0,0,0,0.75);
+}
+
+.mainEjCarrito{
+    
+}
+.p-azul{
+    color: blue;
+}
+.p-1{
+    color: blue;
+}
+.text-verde{
+    color: green;
+}
+/*Lado izquierdo*/
+.Lado-izquierdo{
+    display: flex;
+    float: left;
+    flex-direction: column;
+    width: 69rem;
+    margin-bottom: 10rem;
+    margin-top: 10rem;
+    margin-left: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 5rem;
+    background-color: rgb(236, 236, 236);
+}
+.articulo-img{
+    margin-top: 10rem;
+    margin-bottom: 8rem;
+    margin-left: 10rem;
+}
+.articulo-caracteristicas {
+    flex-direction: column;
+
+}
+.articulo-caracteristicas h2{
+    margin-left: 3rem;
+    padding-bottom: 3rem;
+}
+.tabla-producto{
+    margin-left: 3rem;
+    
+}
+
+.article-descripcion{
+    flex-direction: column;
+    margin-left: 3rem;
+    
+    margin-top: 3rem;
+}
+.article-descripcion h2{
+    margin-bottom: 2rem;
+}
+
+/*Lado Derecho*/
+.lado-derecho{
+    display: flex;
+    float: right;
+    flex-direction: column;
+    margin-right: 2rem;
+    margin-left: 1rem;
+    margin-top: 10rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    
+    margin-bottom: 3rem;
+    background-color: rgb(236, 236, 236);
+}
+
+
+.lateral-info{
+    display: flex;
+    justify-content: space-between;
+}
+.lateral-info h1{
+    padding-right: 1rem;
+}
+.lateral-precio h3{
+    font-size: 3rem;
+}
+.lateral-cupones{
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    
+}
+.fondo-azul{
+    background-color: rgb(124, 201, 252);
+    margin-right: 26rem;
+}
+
+.lateral-tipo{
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+.lateral-stock{
+
+}
+.lateral-stock p{
+    display: flex;
+    flex-direction: row;
+
+}
