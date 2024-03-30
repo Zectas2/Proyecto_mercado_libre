@@ -1,11 +1,21 @@
 /*index.html*/
 
+/*Sombras*/
+.sombra{
+    -webkit-box-shadow: 0px -1px 13px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -1px 13px 4px rgba(0,0,0,0.75);
+    box-shadow: 0px -1px 13px 4px rgba(0,0,0,0.75);
+}
+
+
+
 #titulo-principal{
     text-align: center;
     text-transform: uppercase;
     padding-top: 10rem;
 
 }
+
 
 
 .barra-busqueda{
@@ -107,6 +117,7 @@
     justify-content: center;
     padding-bottom: 5rem;
     background-color: yellow;
+    text-decoration: underline;
 }
 .formulario{
     background-color: sandybrown;
@@ -130,8 +141,13 @@
 }
 
 .formulario-campos{
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2rem;
 }
+
+
 
 .campo{
     margin-bottom: 1rem;
@@ -169,7 +185,10 @@
 
 }
 .formulario-boton{
+    display: flex;
+    justify-content: center;
     width: 100%;
+    
 }
 
 /*nuevaCuenta.html*/
@@ -178,6 +197,7 @@
     justify-content: center;
     padding-bottom: 5rem;
     background-color: yellow;
+    text-decoration: underline;
 }
 
 .formulario-crearCuenta{
@@ -198,9 +218,26 @@
     text-transform: uppercase;
     font-weight: 700px;
     margin-bottom: 2rem;
+    padding-bottom: 2rem;
     color: black;
 }
 
 .crearCuenta-campos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2rem;
 
+}
+
+.crearCuenta-campos label{
+    padding: 1rem;
+}
+
+.boton-nuevaCuenta{
+    border-radius: .5rem;
+    background-color: chocolate;
+    color: black;
+    padding: 2rem;
+    margin: 2rem;
 }
