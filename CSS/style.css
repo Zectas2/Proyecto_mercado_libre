@@ -512,3 +512,107 @@
     
 
 }
+/*compra.html*/
+/*compra main lado izquierdo*/
+.compra-main-section{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin-top: 3rem;
+    margin-left: 15rem;
+    margin-bottom: 3rem;
+    background-color: var(--fondo-cuadros);
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+.compra-titulo{
+    display: flex;
+    flex-direction: row;
+}
+
+.compra-dom-article{
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    
+}
+.compra-nombre{
+    display: flex;
+    flex-direction: row;
+}
+.compra-nombre input{
+    margin-right: 1rem;
+}
+
+.compra-domicilio-titulo{
+    display: flex;
+    flex-direction: row;
+}
+.compra-domicilio-precio{
+    margin-left: 19rem;
+}
+.compra-dom-direccion{
+    margin-left: 2rem;
+    text-decoration: none;
+    
+}
+
+.compra-punto-article{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    border-radius: 2rem;
+}
+.compra-punto-precio{
+    margin-left: 7rem;
+}
+.compra-retiro-article{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+}
+.compra-retiro-direccion{
+    margin-left: 2rem;
+}
+.compra-retiro-precio{
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+.compra-boton-continuar{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.compra-boton-continuar-p1 button{
+    padding: 1rem 2rem 1rem 2rem;
+}
+/*compra aside lado derecho*/
+.compra-aside-section{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin-top: 3rem;
+    margin-left: 1rem;
+    margin-bottom: 3rem;
+    margin-right: 25rem;
+    background-color: var(--fondo-cuadros);
+    border-radius: 2rem;
+    padding: 2rem 2rem 15rem 2rem;
+}
+.resumen-titulo{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+.resumen-det-pre{
+    display: flex;
+    flex-direction: row;
+}
+
+.resumen-detalle{
+    margin-right: 5rem;
+    
+}

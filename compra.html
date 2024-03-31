@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Normalize-CSS-->
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <!--Style-CSS-->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!--Bootstraps-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--.-->
+    <title>Compra</title>
+    <!--efecto degradado fondo-->
+    <style>
+        body header{
+          background-color: yellow;
+        }
+        body{
+          
+          background-image: linear-gradient(to top, rgb(230, 230, 230) 0%, yellow 100% );
+        }
+      </style>
+
+
+</head>
+<body>
+    <header>
+        <!--Logo-->
+        <div class="nav-bar-img">
+          <a href="index.html">
+          <img src="imagenes/mercadolibre logo.png" alt="logo" height="200" width="500">
+          </a>
+          <!--Titulo(posible eliminacion)-->
+        <h1 id="titulo-principal">Mercado libre</h1>
+      </div>
+        <!--Barra de busqueda-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary nav-bar  nav-background">
+          <div class="container-fluid nav-background">
+            <a class="navbar-brand" href="index.html">Bienvenido</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav-bar  nav-background" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Categorias
+                  </a>
+                  <ul class="dropdown-menu nav-bar ">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Ofertas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Historial</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Supermercado</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Moda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Mercado Play</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Vender</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Ayuda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="iniciarSesion.html">Iniciar Sesion</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="nuevaCuenta.html">Nueva Cuenta</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar productos, marcas y mas..." aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+    </header>
+    <main>
+        <section class="compra-main-section sombra">
+            <div class="compra-titulo">
+                <h1>Elige la forma de entrega</h1>
+            </div>
+            <article class="compra-dom-article">
+                    <div class="compra-domicilio-titulo">
+                        <div class="compra-nombre">
+                          <input type="checkbox" name="" id="cb-retiro-dom">
+                          <h2>Enviar a domicilio</h2>
+                        </div>
+                        <div class="compra-domicilio-precio">
+                            <h3>$ 4.590</h3>
+                        </div>
+                    </div>
+                    <div class="compra-dom-direccion">
+                        <p>Ortuzar 690 - Melipilla <br>Laboral</p>
+                    </div>
+                    <div class="compra-dom-direccion">
+                      <a href="">Editar o elegir otro domicilio</a>
+                    </div>
+            </article>
+            <article class="compra-punto-article">
+                <div class="compra-punto-titulo">
+                    <div class="compra-nombre">
+                      <input type="checkbox" name="" id="cb-retiro-punto">
+                      <h2>Retirar en un punto de entrega</h2>
+                    </div>
+                </div>
+                <div class="compra-punto-precio">
+                    <h3>$ 4.390</h3>
+                </div>
+            </article>
+            <article class="compra-retiro-article">
+                <div class="compra-retiro-titulo">
+                    <div class="compra-nombre">
+                      <input type="checkbox" name="" id="cb-retiro-vendor">
+                      <h2>Retirar en el domicilio del vendedor</h2>
+                    </div>
+                  <div class="compra-retiro-direccion">
+                      <p>Independencia, RM (Melipilla)</p>
+                  </div>
+                </div>
+                <div class="compra-retiro-precio">
+                    <h3>Gratis</h3>
+                </div>
+            </article>
+            <article class="compra-boton-continuar">
+                <div class="compra-boton-continuar-p1">
+                    <a href="" >
+                        <button class="btn btn-primary" type="button">Continuar</button></a>
+                </div>
+            </article>
+        </section>
+    </main>
+    <aside>
+        <section class="compra-aside-section sombra">
+            <article class="compra-resumen-article">
+                <div class="resumen-titulo">
+                    <h2>Resumen de Compra</h2>
+                </div>
+                <div class="resumen-det-pre">
+                  <div class="resumen-detalle">
+                      <h3>Producto</h3>
+                      <h3>Pagas</h3>
+                  </div>
+                  <div class="resumen-detalle-precio">
+                      <h4>$ 16.990</h3>
+                      <h3>$ 16.990</h3>
+                  </div>
+                </div>
+            </article>
+        </section>
+    </aside>
+    <!--Bootstraps-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+</body>
+</html>
