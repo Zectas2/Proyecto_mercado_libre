@@ -616,3 +616,18 @@
     margin-right: 5rem;
     
 }
+/*medioPago.html*/
+
+.medio-pago-main-section{
+    display: flex;
+    float: left;
+    flex-direction: column;
+    background-color: var(--fondo-cuadros);
+    padding: 2rem 15rem 3rem 2rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    margin-left: 10rem;
+    margin-right: 2rem;
+    border-radius: 2rem;
+    
+}
