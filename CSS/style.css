@@ -631,3 +631,39 @@
     border-radius: 2rem;
     
 }
+.mp-boton-continuar{
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+.mp-boton-continuar-p1 button{
+    padding: 1rem 2rem 1rem 2rem;
+    margin-left: 10rem;
+    font-size: 5rem;
+}
+
+/*compraEfectuada.html*/
+
+.cf-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem;
+    padding-top: 10rem;
+    padding-bottom: 20rem;
+    border-radius: 2rem;
+    background-color: var(--fondo-cuadros);
+}
+.cf-titulo{
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 2rem;
+    margin-bottom: 5rem;
+}
+.cf-boton button{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    font-size: 5rem;
+}
