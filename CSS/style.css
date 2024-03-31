@@ -1,5 +1,9 @@
 /*index.html*/
 
+/*Definiendo colores*/
+:root{
+    --fondo-cuadros: rgb(236, 236, 236);
+}
 /*Sombras*/
 .sombra{
     -webkit-box-shadow: 0px -1px 13px 4px rgba(0,0,0,0.75);
@@ -106,7 +110,7 @@
     text-decoration: underline;
 }
 .formulario{
-    background-color: sandybrown;
+    background-color: var(--fondo-cuadros);
     width: min(60rem , 100%);
     margin: 0 auto 10rem auto;
     padding: 5rem;
@@ -187,7 +191,7 @@
 }
 
 .formulario-crearCuenta{
-    background-color: sandybrown;
+    background-color: var(--fondo-cuadros);
     width: min(60rem , 100%);
     margin: 0 auto;
     padding: 2rem;
@@ -259,7 +263,7 @@
     padding-left: 1rem;
     padding-right: 1rem;
     padding-bottom: 5rem;
-    background-color: rgb(236, 236, 236);
+    background-color: var(--fondo-cuadros);
 }
 .articulo-img{
     margin-top: 10rem;
@@ -299,11 +303,11 @@
     margin-top: 10rem;
     padding-left: 1rem;
     padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 4rem;
     padding-right: 1rem;
     
-    margin-bottom: 3rem;
-    background-color: rgb(236, 236, 236);
+    margin-bottom: 2rem;
+    background-color: var(--fondo-cuadros);
 }
 
 
@@ -339,5 +343,172 @@
 .lateral-stock p{
     display: flex;
     flex-direction: row;
+
+}
+.lateral-b-comprar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 3rem;
+    width: 40rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+
+/*agregarCarrito.html*/
+
+/*Lado Izquierdo*/
+.ac-lateral-left{
+    display: flex;
+    float: left;
+    flex-direction: column;
+    background-color: var(--fondo-cuadros);
+    padding: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    margin-left: 1rem;
+    margin-right: 2rem;
+    border-radius: 2rem;
+}
+.ac-lateral-left-article{
+
+}
+.ac-lateral-left-titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-bottom: 2rem;
+}
+
+.ac-lateral-left-contenido{
+    display: flex;
+    flex-direction: row;
+
+}
+
+/*ponemos nombre y opciones en columna*/
+.ac-left-nombre-op{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 4rem 2rem 1rem;
+    text-decoration: none;
+}
+.ac-left-nombre{
+    
+}
+
+.ac-left-opciones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+/**/
+.alinear-nombre-cantidad-precio{
+    display: flex;
+    flex-direction: row;
+}
+.ac-left-cantidad{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.ac-left-cantidad p{
+    text-decoration: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: .7rem;
+}
+
+/**/
+.ac-left-precio{
+    margin-top: 2rem;
+    margin-left: 3rem;
+    margin-right: 1rem;
+}
+/**/
+.ac-left-art-envio{
+    display: flex;
+    flex-direction: row;
+}
+.ac-left-art-envio h3{
+    float: inline-end;
+}
+
+.ac-left-envio-titulo{
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    margin-left: 1rem;
+    margin-right: 2rem;
+    border-radius: 2rem;
+}
+
+
+.ac-left-envio-precio{
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    margin-left: 47rem;
+    margin-right: 2rem;
+    border-radius: 2rem;
+}
+/*Lado Derecho*/
+.ac-lateral-right{
+    display: flex;
+    float: right;
+    flex-direction: column;
+    background-color: var(--fondo-cuadros);
+    padding: 2rem 1rem 4rem 2rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border-radius: 2rem;
+}
+
+.ac-lateral-right-titulo{
+    padding: 1rem;
+    text-decoration: none;
+    justify-content: space-around;
+}
+
+.ac-right-detalle{
+    display: flex;
+    flex-direction: row;
+}
+.ac-right-detalle-p1{
+    margin-right: 17rem;
+}
+.ac-right-cupones{
+    display: flex;
+    flex-direction: row;
+}
+
+.ac-right-total{
+    display: flex;
+    flex-direction: row;
+}
+
+.ac-right-total-p1{
+    margin-right: 14rem;
+}
+.ac-right-total-p2{
+    padding-right: 1rem;
+}
+
+.ac-derecho-boton button{
+    width: 14rem;
+    height: 4rem;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    
 
 }

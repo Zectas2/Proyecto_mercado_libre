@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Normalize-CSS-->
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <!--Style-CSS-->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!--Bootstraps-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--.-->
+    <title>Añadir al Carrito</title>
+    <!--efecto degradado fondo-->
+    <style>
+        body header{
+          background-color: yellow;
+        }
+        body{
+          
+          background-image: linear-gradient(to top, rgb(230, 230, 230) 0%, yellow 100% );
+        }
+      </style>
+</head>
+<body>
+    <header>
+        <!--Logo-->
+        <div class="nav-bar-img">
+          <a href="index.html">
+          <img src="imagenes/mercadolibre logo.png" alt="logo" height="200" width="500">
+          </a>
+          <!--Titulo(posible eliminacion)-->
+        <h1 id="titulo-principal">Mercado libre</h1>
+      </div>
+        <!--Barra de busqueda-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary nav-bar  nav-background">
+          <div class="container-fluid nav-background">
+            <a class="navbar-brand" href="index.html">Bienvenido</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav-bar  nav-background" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Categorias
+                  </a>
+                  <ul class="dropdown-menu nav-bar ">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Ofertas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Historial</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Supermercado</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Moda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Mercado Play</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Vender</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Ayuda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="iniciarSesion.html">Iniciar Sesion</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="nuevaCuenta.html">Nueva Cuenta</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar productos, marcas y mas..." aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+    </header>
+    <!--Lado izquierdo-->
+    <main>
+        <section class="ac-lateral-left sombra">
+            <article class="ac-lateral-left-article">
+                <div class="ac-lateral-left-titulo">
+                    <h1>
+                        Vendedor/Empresa
+                    </h1>
+                </div>
+                <div class="ac-lateral-left-contenido">
+                    <!--añadimos imagen de producto y la linkeamos al producto-->
+                    <a href="ejemploCarrito.html">
+                    <img src="imagenes/main-tarjeta/card-img-1.png" alt="ac-imgejemplo" width="200" height="200">
+                    </a>
+                    <div class="ac-left-nombre-op">
+                        <div class="ac-left-nombre">
+                            <h2>
+                                Promoción 6 individuales Ecocuero
+                            </h2>
+                            <p>
+                                Color: CANELA OSCURO
+                            </p>
+                        </div>
+                        <div class="ac-left-opciones">
+                            <a href="">Eliminar</a>
+                            <a href="">Guardar</a>
+                            <a href="">Modificar</a>
+                            <a href="">Comprar ahora</a>
+                        </div>
+                    </div>
+                    <div class="ac-left-cantidad">
+                        <!--añadimos icono de minus-->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-square-rounded-minus" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M9 12h6" />
+                            <path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z" />
+                          </svg>
+                          <!--ponemos la cantidad encerrada en un cuadro-->
+                        <p class="p-azul">1</p>
+                        <!--añadimos icono de plus-->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-square-rounded-plus" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z" />
+                            <path d="M15 12h-6" />
+                            <path d="M12 9v6" />
+                          </svg>
+                    </div>
+                    <div class="ac-left-precio">
+                        <h1>
+                            $ 16.990
+                        </h1>
+                    </div>
+                    
+                </div>
+            </article>
+            <article class="ac-left-art-envio">
+                <div class="ac-left-envio-titulo">
+                    <h2>
+                        Envio
+                    </h2>
+                </div>
+                <div class="ac-left-envio-precio">
+                    <h3>
+                        $ 4.690
+                    </h3>
+                </div>
+            </article>
+        </section>
+    </main>
+    <!--Lado Derecho-->
+    <aside>
+        <section class="ac-lateral-right sombra">
+            <div class="ac-lateral-right-titulo">
+                <h1>
+                    Resumen de Compra
+                </h1>
+            </div>
+            <div class="ac-right-detalle">
+                <div class="ac-right-detalle-p1">
+                    <p>Producto</p>
+                    <p>Envio</p>
+                </div> 
+                <div  class="ac-right-detalle-p2">
+                <p>$ 16.990</p>
+                <p>$ 4.590</p>
+                </div>
+            </div>
+            <div class="ac-right-cupones">
+                <p class="p-azul"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-dollar" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                    <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                    <path d="M14 11h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5" />
+                    <path d="M12 17v1m0 -8v1" />
+                </svg>
+                 0 de 2 cupones aplicados</p>
+            </div>
+            <div class="ac-right-total">
+                <div class="ac-right-total-p1">
+                <h2>Total</h2>
+                </div>
+                <div class="ac-right-total-p2">
+                <h2>$ 21.580</h2>
+                </div>
+            </div>
+            <div class="ac-derecho-boton">
+                <a href="" >
+                    <button class="btn btn-primary" type="button">Continuar Compra</button></a>
+            </div>
+        </section>
+    </aside>
+    <!--Bootstraps-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+</body>
+</html>
