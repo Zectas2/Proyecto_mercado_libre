@@ -1,12 +1,12 @@
 /*index.html*/
 
-/*Definiendo colores*/
+/*Definiendo colores------------------------------------------------------------------------*/
 :root{
     --fondo-cuadros: rgb(236, 236, 236);
 }
 
 @media screen and (min-width: 1400px){
-    /*ejemploCarrito.html*/
+    /*ejemploCarrito.html------------------------------------------------------------------------*/
     
     .Lado-izquierdo{
         width: 33rem;
@@ -22,13 +22,14 @@
     .tabla-producto{
         width: 25rem;
     }
-    /*agregarCarrito.html*/
+    /*agregarCarrito.html------------------------------------------------------------------------*/
     .agregarCarrito-body{
         display: flex;
         flex-direction: column;
         align-items: center;
+        
     }
-    /*tipoEnvio.html*/
+    /*tipoEnvio.html------------------------------------------------------------------------*/
     .compra-main-section{
         margin-left: 3rem;
     }
@@ -36,19 +37,19 @@
         display: flex;
         flex-direction: row;
     }
-    /*medioPago.html*/
+    /*medioPago.html------------------------------------------------------------------------*/
     .medioPago-body{
         display: flex;
         flex-direction: row;
     }
 }
-/*Sombras*/
+/*Sombras------------------------------------------------------------------------*/
 .sombra{
     -webkit-box-shadow: 0px -1px 13px 4px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px -1px 13px 4px rgba(0,0,0,0.75);
     box-shadow: 0px -1px 13px 4px rgba(0,0,0,0.75);
 }
-
+/*------------------------------------------------------------------------*/
 .nav-bar-img{
     display: flex;
     flex-wrap: wrap;
@@ -136,7 +137,7 @@
     border-radius: 5rem;
 }
 
-/*IniciarSesion.html*/
+/*IniciarSesion.html------------------------------------------------------------------------*/
 .is-titulo{
     display: flex;
     justify-content: center;
@@ -216,7 +217,7 @@
     
 }
 
-/*nuevaCuenta.html*/
+/*nuevaCuenta.html------------------------------------------------------------------------*/
 .nc-titulo{
     display: flex;
     justify-content: center;
@@ -267,7 +268,7 @@
     margin: 2rem;
 }
 
-/*ejemploCarrito.html*/
+/*ejemploCarrito.html------------------------------------------------------------------------*/
 .sombraV2{
     -webkit-box-shadow: -1px 4px 10px 3px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 4px 10px 3px rgba(0,0,0,0.75);
@@ -286,7 +287,7 @@
 .text-verde{
     color: green;
 }
-/*Lado izquierdo*/
+/*Lado izquierdo------------------------------------------------------------------------*/
 .Lado-izquierdo{
     display: flex;
     float: left;
@@ -326,7 +327,7 @@
     margin-bottom: 2rem;
 }
 
-/*Lado Derecho*/
+/*Lado Derecho------------------------------------------------------------------------*/
 .lado-derecho{
     display: flex;
     float: right;
@@ -390,9 +391,9 @@
     
 }
 
-/*agregarCarrito.html*/
+/*agregarCarrito.html------------------------------------------------------------------------*/
 
-/*Lado Izquierdo*/
+/*Lado Izquierdo------------------------------------------------------------------------*/
 .ac-lateral-left{
     display: flex;
     float: left;
@@ -421,7 +422,7 @@
 
 }
 
-/*ponemos nombre y opciones en columna*/
+/*ponemos nombre y opciones en columna------------------------------------------------------------------------*/
 .ac-left-nombre-op{
     display: flex;
     flex-direction: column;
@@ -492,7 +493,7 @@
     margin-right: 2rem;
     border-radius: 2rem;
 }
-/*Lado Derecho*/
+/*Lado Derecho------------------------------------------------------------------------*/
 .ac-lateral-right{
     display: flex;
     float: right;
@@ -545,8 +546,8 @@
     
 
 }
-/*compra.html*/
-/*compra main lado izquierdo*/
+/*compra.html---------------------------------------------------------------------------------------*/
+/*compra main lado izquierdo------------------------------------------------------------------------*/
 .compra-main-section{
     display: flex;
     flex-direction: column;
@@ -622,7 +623,7 @@
 .compra-boton-continuar-p1 button{
     padding: 1rem 2rem 1rem 2rem;
 }
-/*compra aside lado derecho*/
+/*compra aside lado derecho------------------------------------------------------------------------*/
 .compra-aside-section{
     display: flex;
     flex-direction: column;
@@ -649,7 +650,8 @@
     margin-right: 5rem;
     
 }
-/*medioPago.html*/
+
+/*medioPago.html------------------------------------------------------------------------*/
 
 .medio-pago-main-section{
     display: flex;
@@ -675,7 +677,7 @@
     font-size: 5rem;
 }
 
-/*compraEfectuada.html*/
+/*compraEfectuada.html------------------------------------------------------------------------*/
 
 .cf-section{
     display: flex;
