@@ -4,6 +4,44 @@
 :root{
     --fondo-cuadros: rgb(236, 236, 236);
 }
+
+@media screen and (min-width: 1400px){
+    /*ejemploCarrito.html*/
+    
+    .Lado-izquierdo{
+        width: 33rem;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        margin-left: 1rem;
+        align-items: start;
+    }
+    .Lado-izquierdo article{
+        width: 30rem;
+    }
+    
+    .tabla-producto{
+        width: 25rem;
+    }
+    /*agregarCarrito.html*/
+    .agregarCarrito-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /*tipoEnvio.html*/
+    .compra-main-section{
+        margin-left: 3rem;
+    }
+    .tipoEnvio-body{
+        display: flex;
+        flex-direction: row;
+    }
+    /*medioPago.html*/
+    .medioPago-body{
+        display: flex;
+        flex-direction: row;
+    }
+}
 /*Sombras*/
 .sombra{
     -webkit-box-shadow: 0px -1px 13px 4px rgba(0,0,0,0.75);
@@ -20,7 +58,7 @@
     justify-content: start;
 }
 .nav-bar-img h1{
-    margin: 5rem 5rem 5rem 10rem;
+    margin: 3rem 5rem 1rem 10rem;
     text-decoration: none;
     text-transform: uppercase;
     font-family: cursive;
@@ -53,13 +91,6 @@
     align-items: center;
 }
 
- @media (min-width: 768px){
-    .nav-bar{
-        flex-direction: row;
-    }
-    
-
- }
 .nav-bar a{
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -79,13 +110,17 @@
 .main-producto-tarjeta-seccion{
     display: flex;
     justify-content: space-between;
-    margin-left: 10rem;
-    margin-right: 10rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
     margin-top: 5rem;
     margin-bottom: 5rem;
     border-radius: 5rem;
 }
 
+.espacio-tarjetas{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
 .main-mystery-box h2{
     display: flex;
     justify-content: center;
@@ -256,7 +291,7 @@
     display: flex;
     float: left;
     flex-direction: column;
-    width: 69rem;
+    width: auto;
     margin-bottom: 10rem;
     margin-top: 10rem;
     margin-left: 2rem;
@@ -266,9 +301,7 @@
     background-color: var(--fondo-cuadros);
 }
 .articulo-img{
-    margin-top: 10rem;
-    margin-bottom: 8rem;
-    margin-left: 10rem;
+    margin: 1rem auto auto auto;
 }
 .articulo-caracteristicas {
     flex-direction: column;
