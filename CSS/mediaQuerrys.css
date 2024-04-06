@@ -1,0 +1,160 @@
+/*Media querrys*/
+/*media querry hasta 720px*/
+@media screen and (max-width: 720px){
+    .nav-bar-img img{
+        display: none;
+    }
+}
+/*media querry desde 720px*/
+@media screen and (min-width: 720px){
+    
+    /*nav-bar*/
+    .nav-bar-img {
+        flex-direction: column;
+        align-items: start;
+        flex-wrap: unset;
+    }
+    .nav-bar-img img{
+        display: none;
+    }
+
+    .nav-bar-img h1 {
+        margin: 1rem;
+    }
+    /*index-tarjetas*/
+    .main-producto-tarjeta-seccion {
+        margin: 2rem;
+        flex-wrap: wrap;
+    }
+    .espacio-tarjetas{
+        margin-bottom: 1rem;
+    }
+    .tarjeta1-precio{
+        margin-left: 1rem;
+    }
+    .tarjetas-mystery-box {
+        margin: 1px;
+    }
+    /*ejemploCarrito.html*/
+    .lado-derecho {
+        float: left;
+        margin-left: 2rem;
+        margin-top: 1rem;
+    }
+    .Lado-izquierdo {
+        margin-bottom: 1rem;
+        margin-top: 3rem;
+
+    }
+    .articulo-img {
+        margin: 1rem auto;
+    }
+}
+/*Media querry hasta 1400px*/
+@media screen and (min-width: 1400px){
+
+    /*nav-bar*/
+    .nav-bar-img{
+        display: flex;
+        flex-direction: row;
+    }
+    .nav-bar-img img{
+        display: flex;
+    }
+    .nav-bar-img h1 {
+        margin: 1rem;
+        margin-top: revert;
+    }
+    /*ejemploCarrito.html------------------------------------------------------------------------*/
+    
+    .Lado-izquierdo{
+        width: 33rem;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        margin-left: 1rem;
+        align-items: start;
+    }
+    .Lado-izquierdo article{
+        width: 30rem;
+    }
+    
+    .tabla-producto{
+        width: 25rem;
+    }
+    /*agregarCarrito.html------------------------------------------------------------------------*/
+    .agregarCarrito-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    /*tipoEnvio.html------------------------------------------------------------------------*/
+    .compra-main-section{
+        margin-left: 3rem;
+    }
+    .tipoEnvio-body{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 5rem;
+    }
+    /*medioPago.html------------------------------------------------------------------------*/
+    .medioPago-body{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .medio-pago-main-section{
+        margin-left: auto;
+        margin-right: 5rem;
+        padding: 2rem 10rem 3rem 2rem;
+    }
+    .medioPago.html-aside{
+
+    }
+    /*compraEfectuada.html*/
+    .cf-section{
+        margin: 2rem 12rem 5rem 12rem;
+        padding-bottom: 3rem;
+        padding-top: 2rem;
+    }
+}
+/*media querry desde 1920px*/
+@media screen and (min-width: 1920px){
+
+    /*navbar*/
+    .nav-bar-titulo {
+        margin-inline: auto;
+    }
+    div#navbarSupportedContent {
+        flex-direction: row;
+    }
+    /*Lado-izquierdo*/
+    .Lado-izquierdo {
+        width: 66rem;
+
+    }
+    .Lado-izquierdo article {
+        width: fit-content;
+    }
+    .tabla-producto {
+        width: fit-content;
+    }
+    table.table {
+        width: 50rem;
+    }
+    .lado-derecho {
+        margin-top: 2rem;
+    }
+    /*agregarCarrito*/
+    .agregarCarrito-body {
+        display: flex;
+        flex-direction: row;
+    }
+    /*tipoEnvio*/
+    .tipoEnvio-body {
+        justify-content: center;
+    }
+    
+    
+
+}

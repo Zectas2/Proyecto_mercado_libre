@@ -5,44 +5,6 @@
     --fondo-cuadros: rgb(236, 236, 236);
 }
 
-@media screen and (min-width: 1400px){
-    /*ejemploCarrito.html------------------------------------------------------------------------*/
-    
-    .Lado-izquierdo{
-        width: 33rem;
-        margin-top: 2rem;
-        margin-bottom: 3rem;
-        margin-left: 1rem;
-        align-items: start;
-    }
-    .Lado-izquierdo article{
-        width: 30rem;
-    }
-    
-    .tabla-producto{
-        width: 25rem;
-    }
-    /*agregarCarrito.html------------------------------------------------------------------------*/
-    .agregarCarrito-body{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-    }
-    /*tipoEnvio.html------------------------------------------------------------------------*/
-    .compra-main-section{
-        margin-left: 3rem;
-    }
-    .tipoEnvio-body{
-        display: flex;
-        flex-direction: row;
-    }
-    /*medioPago.html------------------------------------------------------------------------*/
-    .medioPago-body{
-        display: flex;
-        flex-direction: row;
-    }
-}
 /*Sombras------------------------------------------------------------------------*/
 .sombra{
     -webkit-box-shadow: 0px -1px 13px 4px rgba(0,0,0,0.75);
@@ -67,11 +29,6 @@
     font-size: 5rem;
 
 }
-
-
-
-
-
 
 .contenedor{
     max-width: 50rem;
@@ -131,10 +88,11 @@
 }
 
 .tarjetas-mystery-box{
-    display: flex;
-    justify-content: space-between;
-    margin: 5rem;
-    border-radius: 5rem;
+    display: grid;
+    grid-template-columns: 
+        repeat(auto-fit,
+                minmax(80px,1fr));
+    gap: 10px;
 }
 
 /*IniciarSesion.html------------------------------------------------------------------------*/
@@ -248,16 +206,16 @@
     color: black;
 }
 
-.crearCuenta-campos{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 2rem;
+/*NuevaCuenta*/
 
+.crearCuenta-campos {
+    display: grid;
 }
 
-.crearCuenta-campos label{
-    padding: 1rem;
+.campo {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .boton-nuevaCuenta{
@@ -652,13 +610,17 @@
 }
 
 /*medioPago.html------------------------------------------------------------------------*/
-
+.medioPago.html-main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 .medio-pago-main-section{
     display: flex;
     float: left;
     flex-direction: column;
     background-color: var(--fondo-cuadros);
-    padding: 2rem 15rem 3rem 2rem;
+    padding: 2rem 10rem 3rem 2rem;
     margin-top: 3rem;
     margin-bottom: 5rem;
     margin-left: 10rem;
@@ -676,7 +638,14 @@
     margin-left: 10rem;
     font-size: 5rem;
 }
-
+.resumen-detalle-precio{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.compra-aside-section{
+    margin-right: 1rem;
+}
 /*compraEfectuada.html------------------------------------------------------------------------*/
 
 .cf-section{

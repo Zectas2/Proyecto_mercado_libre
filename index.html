@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="CSS/normalize.css">
     <!--Style-CSS-->
     <link rel="stylesheet" href="CSS/style.css">
+    <!--MediaQuerry-->
+    <link rel="stylesheet" href="CSS/mediaQuerrys.css">
     <!--Bootstraps-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!--.-->
@@ -134,7 +136,7 @@
                         Pomoción 6 Individuales Ecocuero
                       </p>
                     </div>
-                    <div id="tarjeta1-precio">
+                    <div class="tarjeta1-precio">
                         <p>
                             $16.990
                         </p>
@@ -149,7 +151,7 @@
                         4 Pcs Manteles Individuales Pvc De Mesa Comedor Lavables Color Chocolate
                       </p>
                     </div>
-                    <div id="tarjeta2-precio">
+                    <div class="tarjeta1-precio">
                         <p>
                             $19.990
                         </p>
@@ -164,7 +166,7 @@
                         Mermelada Damasco Molido Mel Tienta 5 Kilos
                       </p>
                     </div>
-                    <div id="tarjeta3-precio">
+                    <div class="tarjeta1-precio">
                         <p>
                             $29.990
                         </p>
@@ -179,7 +181,7 @@
                         Chocolate Barra Costa 52% Cacao Con Almendras 150 Grs
                       </p>
                     </div>
-                    <div id="tarjeta4-precio">
+                    <div class="tarjeta1-precio">
                         <p>
                             $3.990
                         </p>
@@ -194,12 +196,12 @@
                         Cama cucheta Famsa Macao individual color rojo/azul fabricada en acero
                       </p>
                     </div>
-                    <div id="tarjeta4-precio">
+                    <div class="tarjeta1-precio">
                         <p>
                             $259.990
                         </p>
                     </div>
-                </div>
+                  </div>
                 <!--...-->
             </div>
         </section>
@@ -209,65 +211,89 @@
             <h2>Mystery Box</h2>
             <div class="tarjetas-mystery-box">
             <!--Item-Mystery-Box-->
-              <div class="row row-cols-1 row-cols-md-5 g-4">
+              <div class="main-producto-tarjeta-seccion">
                   <!--tarjeta1-->
-                  <div class="col">
-                    <div class="card h-100  sombra">
-                      <img src="imagenes/main-mysterybox/mb-1.png" class="card-img-top" alt="mbNiños">
-                      <div class="card-body">
-                        <h5 class="card-title">Juguetes Mistery Box Para Niños</h5>
-                        <p class="card-text">$12.723</p>
-                      </div>
+                  <div class="card espacio-tarjetas  sombra" style="width: 18rem; height: 35rem;">
+                    <img src="imagenes/main-mysterybox/mb-1.png" class="card-img-top" alt="mbNiños">
+                    <div class="card-body">
+                      <p class="card-text">
+                        Juguetes Mistery Box Para Niños
+                      </p>
+                    </div>
+                    <div class="tarjeta1-precio">
+                        <p>
+                          $12.723
+                        </p>
                     </div>
                   </div>
                   <!--tarjeta2-->
-                  <div class="col">
-                    <div class="card h-100 sombra">
-                      <img src="imagenes/main-mysterybox/mb-2.png" class="card-img-top" alt="mbRandom">
-                      <div class="card-body">
-                        <h5 class="card-title">Caja Sorpresa Misteriosa Mistery Box Random</h5>
-                        <p class="card-text">$39.990</p>
-                      </div>
+                  <div class="card espacio-tarjetas  sombra" style="width: 18rem; height: 35rem;">
+                    <img src="imagenes/main-mysterybox/mb-2.png" class="card-img-top" alt="mbRandom">
+                    <div class="card-body">
+                      <p class="card-text">
+                        Caja Sorpresa Misteriosa Mistery Box Random
+                      </p>
+                    </div>
+                    <div class="tarjeta1-precio">
+                        <p>
+                          $39.990
+                        </p>
                     </div>
                   </div>
                   <!--tarjeta3-->
-                  <div class="col">
-                    <div class="card h-100 sombra">
-                      <img src="imagenes/main-mysterybox/mb-3.png" class="card-img-top" alt="mbPElect">
-                      <div class="card-body">
-                        <h5 class="card-title">Mistery Box Caja Misteriosa Productos Electrónicos</h5>
-                        <p class="card-text">$18.000</p>
-                      </div>
+                  <div class="card espacio-tarjetas  sombra" style="width: 18rem; height: 35rem;">
+                    <img src="imagenes/main-mysterybox/mb-3.png" class="card-img-top" alt="mbPElect">
+                    <div class="card-body">
+                      <p class="card-text">
+                        Mistery Box Caja Misteriosa Productos Electrónicos
+                      </p>
+                    </div>
+                    <div class="tarjeta1-precio">
+                        <p>
+                          $18.000
+                        </p>
                     </div>
                   </div>
                   <!--tarjeta4-->
-                  <div class="col">
-                    <div class="card h-100 sombra">
-                      <img src="imagenes/main-mysterybox/mb-4.png" class="card-img-top" alt="mbSC">
-                      <div class="card-body">
-                        <h5 class="card-title">Caja Misteriosa Sorpresa Ciclismo</h5>
-                        <p class="card-text">$32.990</p>
-                      </div>
+                  <div class="card espacio-tarjetas  sombra" style="width: 18rem; height: 35rem;">
+                    <img src="imagenes/main-mysterybox/mb-4.png" class="card-img-top" alt="mbSC">
+                    <div class="card-body">
+                      <p class="card-text">
+                        Caja Misteriosa Sorpresa Ciclismo
+                      </p>
+                    </div>
+                    <div class="tarjeta1-precio">
+                        <p>
+                          $32.990
+                        </p>
                     </div>
                   </div>
                   <!--tarjeta5-->
-                  <div class="col">
-                      <div class="card h-100 sombra">
-                        <img src="imagenes/main-mysterybox/mb-5.png" class="card-img-top" alt="mbPcosme">
-                        <div class="card-body">
-                          <h5 class="card-title">Mistery Box Caja Misteriosa Productos Cosmeticos</h5>
-                          <p class="card-text">$18.000</p>
-                        </div>
+                    <div class="card espacio-tarjetas  sombra" style="width: 18rem; height: 35rem;">
+                      <img src="imagenes/main-mysterybox/mb-5.png" class="card-img-top" alt="mbPcosme">
+                      <div class="card-body">
+                        <p class="card-text">
+                          Mistery Box Caja Misteriosa Productos Cosmeticos
+                        </p>
+                      </div>
+                      <div class="tarjeta1-precio">
+                          <p>
+                            $18.000
+                          </p>
                       </div>
                     </div>
                     <!--tarjeta6-->
-                    <div class="col">
-                      <div class="card h-100 sombra">
-                        <img src="imagenes/main-mysterybox/mb-6.png" class="card-img-top" alt="mbPokemon">
-                        <div class="card-body">
-                          <h5 class="card-title">Pokemon Tcg Caja Misteriosa Navidad/cumpleaños #1</h5>
-                          <p class="card-text">$38.990</p>
-                        </div>
+                    <div class="card espacio-tarjetas  sombra" style="width: 18rem; height: 35rem;">
+                      <img src="imagenes/main-mysterybox/mb-6.png" class="card-img-top" alt="mbPokemon">
+                      <div class="card-body">
+                        <p class="card-text">
+                          Pokemon Tcg Caja Misteriosa Navidad/cumpleaños #1
+                        </p>
+                      </div>
+                      <div class="tarjeta1-precio">
+                          <p>
+                            $38.990
+                          </p>
                       </div>
                     </div>
                 </div>
