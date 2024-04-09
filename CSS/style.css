@@ -374,11 +374,7 @@
     padding-bottom: 2rem;
 }
 
-.ac-lateral-left-contenido{
-    display: flex;
-    flex-direction: row;
 
-}
 
 /*ponemos nombre y opciones en columna------------------------------------------------------------------------*/
 .ac-left-nombre-op{
@@ -450,6 +446,39 @@
     margin-left: 47rem;
     margin-right: 2rem;
     border-radius: 2rem;
+}
+/*Configuración del Scroll*/
+.este {
+    width: 100%; /* Ancho completo */
+    max-width: 500px; /* Tamaño máximo */
+    height: 300px; /* Altura fija */
+    overflow: auto; /* Activar el scroll */
+}
+.ac-lateral-left-contenido {
+    display: flex;
+    flex-direction: row;
+    width: 100%; /* O un valor porcentual */
+    padding: 2rem; /* Puedes usar rem o em */
+}
+
+/* Media query para ajustar el scroll en pantallas más pequeñas */
+@media screen and (max-width: 600px) {
+    .este {
+        max-width: 100%; /* Ancho máximo del 100% en pantallas pequeñas */
+        height: 200px; /* Altura ajustada */
+    }
+    .ac-lateral-left-contenido {
+        flex-direction: column; /* Cambiar la dirección de los elementos en dispositivos más pequeños */
+    }
+    .ac-left-opciones{
+        display: flex;
+        flex-direction: column;
+    }
+    .ac-left-nombre{
+        display: grid;
+        grid-template-rows: repeat(auto-fit,minmax(80px, 1fr));
+    }
+
 }
 /*Lado Derecho------------------------------------------------------------------------*/
 .ac-lateral-right{
