@@ -7,6 +7,14 @@
     .nav-bar-img img{
         display: none;
     }
+    .nav-bar-img h1 {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 15vw;
+        margin: 1rem;
+    }
+    /*AgregarCarrito.html*/
     .agregarCarrito-body {
         display: flex;
         flex-direction: column;
@@ -33,6 +41,7 @@
         .ac-lateral-left {
             float: none;
         }
+    /**/
 }
 /*media querry desde 720px*/
 @media screen and (min-width: 720px){
@@ -51,35 +60,24 @@
         margin: 1rem;
     }
     /*index-tarjetas*/
-    .main-producto-tarjeta-seccion {
-        margin: 2rem;
-        flex-wrap: wrap;
-    }
-    .espacio-tarjetas{
-        margin-bottom: 1rem;
-    }
-    .tarjeta1-precio{
-        margin-left: 1rem;
-    }
+    
     .tarjetas-mystery-box {
         margin: 1px;
     }
+    
     /*ejemploCarrito.html*/
-    .lado-derecho {
-        float: left;
-        margin-left: 2rem;
-        margin-top: 1rem;
-    }
-    .Lado-izquierdo {
-        margin-bottom: 1rem;
-        margin-top: 3rem;
-
-    }
-    .articulo-img {
-        margin: 1rem auto;
-    }
+    
 }
 /*Media querry hasta 1400px*/
+@media screen and (max-width: 1400px){
+    .agregarCarrito-body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+/*Media querry desde 1400px*/
 @media screen and (min-width: 1400px){
 
     /*nav-bar*/
@@ -96,20 +94,6 @@
     }
     /*ejemploCarrito.html------------------------------------------------------------------------*/
     
-    .Lado-izquierdo{
-        width: 33rem;
-        margin-top: 2rem;
-        margin-bottom: 3rem;
-        margin-left: 1rem;
-        align-items: start;
-    }
-    .Lado-izquierdo article{
-        width: 30rem;
-    }
-    
-    .tabla-producto{
-        width: 25rem;
-    }
     /*agregarCarrito.html------------------------------------------------------------------------*/
     
 
@@ -153,9 +137,6 @@
     }
     table.table {
         width: 50rem;
-    }
-    .lado-derecho {
-        margin-top: 2rem;
     }
     /*agregarCarrito*/
     .agregarCarrito-body {

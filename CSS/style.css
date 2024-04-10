@@ -73,12 +73,17 @@
     margin-top: 5rem;
     margin-bottom: 5rem;
     border-radius: 5rem;
+    flex-wrap: wrap;
 }
 
 .espacio-tarjetas{
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin: 1rem;
 }
+
+.tarjeta1-precio {
+    margin-left: 1rem;
+}
+
 .main-mystery-box h2{
     display: flex;
     justify-content: center;
@@ -86,7 +91,6 @@
     margin-bottom: 5rem;
 
 }
-
 .tarjetas-mystery-box{
     display: grid;
     grid-template-columns: 
@@ -94,6 +98,7 @@
                 minmax(80px,1fr));
     gap: 10px;
 }
+
 
 /*IniciarSesion.html------------------------------------------------------------------------*/
 .is-titulo{
@@ -233,8 +238,10 @@
     box-shadow: -1px 4px 10px 3px rgba(0,0,0,0.75);
 }
 
-.mainEjCarrito{
-    
+.mainEjCarrito {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .p-azul{
     color: blue;
@@ -246,18 +253,16 @@
     color: green;
 }
 /*Lado izquierdo------------------------------------------------------------------------*/
-.Lado-izquierdo{
+.Lado-izquierdo {
     display: flex;
-    float: left;
     flex-direction: column;
-    width: auto;
-    margin-bottom: 10rem;
-    margin-top: 10rem;
-    margin-left: 2rem;
+    margin: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-bottom: 5rem;
     background-color: var(--fondo-cuadros);
+    float: left;
+    width: min-content;
 }
 .articulo-img{
     margin: 1rem auto auto auto;
@@ -286,63 +291,82 @@
 }
 
 /*Lado Derecho------------------------------------------------------------------------*/
-.lado-derecho{
+.lado-derecho {
     display: flex;
-    float: right;
     flex-direction: column;
-    margin-right: 2rem;
-    margin-left: 1rem;
-    margin-top: 10rem;
+    margin: 1rem;
     padding-left: 1rem;
     padding-top: 1rem;
     padding-bottom: 4rem;
     padding-right: 1rem;
-    
     margin-bottom: 2rem;
     background-color: var(--fondo-cuadros);
+    float: right;
+    width: min-content;
 }
 
 
-.lateral-info{
+.lateral-info {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
-.lateral-info h1{
+
+.lateral-info h1 {
+    display: flex;
     padding-right: 1rem;
+    flex-wrap: wrap;
+    font-size: 2.5vw;
 }
+
+.lateral-precio {
+    width: fit-content;
+}
+
 .lateral-precio h3{
     font-size: 3rem;
 }
-.lateral-cupones{
+
+.lateral-cupones {
+    width: fit-content;
     margin-top: 3rem;
     margin-bottom: 4rem;
-    
-}
-.fondo-azul{
-    background-color: rgb(124, 201, 252);
-    margin-right: 26rem;
 }
 
-.lateral-tipo{
+.fondo-azul{
+    background-color: rgb(124, 201, 252);
+}
+
+.lateral-tiempo {
+    width: fit-content;
+}
+.lateral-devolucion {
+    width: fit-content;
+}
+
+.lateral-tipo {
     margin-top: 4rem;
     margin-bottom: 3rem;
     font-size: 2rem;
+    width: fit-content;
 }
 
-.lateral-stock{
-
+.lateral-stock {
+    width: fit-content;
 }
+
 .lateral-stock p{
     display: flex;
     flex-direction: row;
 
+}
+button.btn.btn-primary.lateral-b-comprar {
+    width: 15vw;
 }
 .lateral-b-comprar{
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 3rem;
-    width: 40rem;
     font-size: 2rem;
     text-decoration: none;
     text-transform: uppercase;
@@ -350,6 +374,11 @@
 }
 
 /*agregarCarrito.html------------------------------------------------------------------------*/
+.agregarCarrito-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
 /*Lado Izquierdo------------------------------------------------------------------------*/
 .ac-lateral-left {
@@ -513,29 +542,35 @@
     justify-content: space-around;
     align-items: center;
 }
-.medio-pago-main-section{
+.tipoEnvio-body {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.compra-main-section{
     display: flex;
     float: left;
     flex-direction: column;
     background-color: var(--fondo-cuadros);
-    padding: 1rem;
     border-radius: 2rem;
     margin: 1rem;
-    width: fit-content;
+    padding: 1rem;
 }
 
-.compra-titulo{
+.compra-titulo {
     display: flex;
     flex-direction: row;
+    font-size: 1vw;
 }
 
-.compra-dom-article{
+.compra-dom-article {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     border-radius: 2rem;
     margin-top: 2rem;
-    
 }
+
 .compra-nombre{
     display: flex;
     flex-direction: row;
@@ -544,41 +579,45 @@
     margin-right: 1rem;
 }
 
-.compra-domicilio-titulo{
+.compra-domicilio-titulo {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-.compra-domicilio-precio{
-    margin-left: 19rem;
-}
+
 .compra-dom-direccion{
     margin-left: 2rem;
     text-decoration: none;
     
 }
 
-.compra-punto-article{
+.compra-punto-article {
     display: flex;
     flex-direction: row;
     margin-top: 2rem;
     border-radius: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
+
 .compra-punto-precio{
-    margin-left: 7rem;
 }
-.compra-retiro-article{
+
+.compra-retiro-article {
     display: flex;
     flex-direction: row;
     margin-top: 2rem;
     margin-bottom: 2rem;
     border-radius: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .compra-retiro-direccion{
     margin-left: 2rem;
 }
-.compra-retiro-precio{
-    margin-left: 3rem;
-    margin-top: 1rem;
+.compra-retiro-precio {
+    margin-top: auto;
 }
 .compra-boton-continuar{
     display: flex;
@@ -590,61 +629,82 @@
     font-size: 1rem;
 }
 /*compra aside lado derecho------------------------------------------------------------------------*/
-.compra-aside-section{
+.compra-aside-section {
     display: flex;
     flex-direction: column;
     float: right;
     margin-top: 3rem;
     margin-left: 1rem;
     margin-bottom: 3rem;
-    margin-right: 25rem;
     background-color: var(--fondo-cuadros);
     border-radius: 2rem;
     padding: 2rem 2rem 15rem 2rem;
+    flex-wrap: wrap;
+    width: fit-content;
 }
-.resumen-titulo{
+
+.resumen-titulo {
     display: flex;
     flex-direction: row;
     margin-bottom: 2rem;
+    flex-wrap: wrap;
+    font-size: 1vw;
 }
-.resumen-det-pre{
+.resumen-det-pre {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.resumen-detalle{
-    margin-right: 5rem;
-    
+.resumen-detalle {
+    display: flex;
+    flex-direction: column;
 }
+
 
 /*medioPago.html------------------------------------------------------------------------*/
+.medioPago-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
 .medioPago.html-main{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.medio-pago-main-section{
+.medio-pago-main-section {
     display: flex;
     float: left;
     flex-direction: column;
     background-color: var(--fondo-cuadros);
-    padding: 2rem 10rem 3rem 2rem;
-    margin-top: 3rem;
-    margin-bottom: 5rem;
-    margin-left: 10rem;
-    margin-right: 2rem;
+    padding: 1rem;
     border-radius: 2rem;
-    
+    margin: 1rem;
 }
 .mp-boton-continuar{
     display: flex;
     flex-direction: row-reverse;
     
 }
-.mp-boton-continuar-p1 button{
-    padding: 1rem 2rem 1rem 2rem;
-    margin-left: 10rem;
-    font-size: 5rem;
+.mp-boton-continuar-p1 button {
+    padding: 1rem;
+    font-size: 2vw;
+}
+.resumen-titulo {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    font-size: 1vw;
+}
+.resumen-det-pre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .resumen-detalle-precio{
     display: flex;
@@ -655,27 +715,28 @@
     margin-right: 1rem;
 }
 /*compraEfectuada.html------------------------------------------------------------------------*/
-
-.cf-section{
+.compraEfectuada-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.cf-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 5rem;
-    padding-top: 10rem;
-    padding-bottom: 20rem;
     border-radius: 2rem;
     background-color: var(--fondo-cuadros);
+    width: fit-content;
 }
-.cf-titulo{
+
+.cf-titulo {
     text-decoration: none;
     text-transform: uppercase;
-    text-shadow: 2rem;
-    margin-bottom: 5rem;
+    margin: 5vw;
 }
-.cf-boton button{
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    padding-left: 6rem;
-    padding-right: 6rem;
-    font-size: 5rem;
+
+.cf-boton button {
+    font-size: 2vw;
+    padding: 1rem;
 }
