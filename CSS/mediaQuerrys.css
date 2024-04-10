@@ -1,9 +1,38 @@
 /*Media querrys*/
+
+
+
 /*media querry hasta 720px*/
 @media screen and (max-width: 720px){
     .nav-bar-img img{
         display: none;
     }
+    .agregarCarrito-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+        /* Media query para ajustar el scroll en pantallas más pequeñas */
+        .este {
+            max-width: 100%; /* Ancho máximo del 100% en pantallas pequeñas */
+            height: 200px; /* Altura ajustada */
+        }
+        .ac-lateral-left-contenido {
+            flex-direction: column; /* Cambiar la dirección de los elementos en dispositivos más pequeños */
+        }
+        .ac-left-opciones{
+            display: flex;
+            flex-direction: column;
+        }
+        .ac-left-nombre{
+            display: grid;
+        }
+        .ac-lateral-right {
+            float: none;
+        }
+        .ac-lateral-left {
+            float: none;
+        }
 }
 /*media querry desde 720px*/
 @media screen and (min-width: 720px){
@@ -82,31 +111,14 @@
         width: 25rem;
     }
     /*agregarCarrito.html------------------------------------------------------------------------*/
-    .agregarCarrito-body{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-    }
+    
+
     /*tipoEnvio.html------------------------------------------------------------------------*/
-    .compra-main-section{
-        margin-left: 3rem;
-    }
-    .tipoEnvio-body{
-        display: flex;
-        flex-direction: row;
-        padding-bottom: 5rem;
-    }
+    
     /*medioPago.html------------------------------------------------------------------------*/
     .medioPago-body{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
     }
     .medio-pago-main-section{
-        margin-left: auto;
-        margin-right: 5rem;
-        padding: 2rem 10rem 3rem 2rem;
     }
     .medioPago.html-aside{
 

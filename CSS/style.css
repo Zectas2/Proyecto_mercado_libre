@@ -352,7 +352,7 @@
 /*agregarCarrito.html------------------------------------------------------------------------*/
 
 /*Lado Izquierdo------------------------------------------------------------------------*/
-.ac-lateral-left{
+.ac-lateral-left {
     display: flex;
     float: left;
     flex-direction: column;
@@ -363,6 +363,7 @@
     margin-left: 1rem;
     margin-right: 2rem;
     border-radius: 2rem;
+    width: fit-content;
 }
 .ac-lateral-left-article{
 
@@ -401,17 +402,15 @@
     display: flex;
     flex-direction: row;
 }
+
 .ac-left-cantidad{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
 }
 .ac-left-cantidad p{
-    text-decoration: none;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-top: .7rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 /**/
@@ -421,31 +420,19 @@
     margin-right: 1rem;
 }
 /**/
-.ac-left-art-envio{
-    display: flex;
-    flex-direction: row;
-}
 .ac-left-art-envio h3{
     float: inline-end;
 }
-
+.ac-left-art-envio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .ac-left-envio-titulo{
-    padding: 2rem;
-    margin-top: 2rem;
-    margin-bottom: 5rem;
-    margin-left: 1rem;
-    margin-right: 2rem;
-    border-radius: 2rem;
 }
 
 
 .ac-left-envio-precio{
-    padding: 2rem;
-    margin-top: 2rem;
-    margin-bottom: 5rem;
-    margin-left: 47rem;
-    margin-right: 2rem;
-    border-radius: 2rem;
 }
 /*Configuración del Scroll*/
 .este {
@@ -457,29 +444,12 @@
 .ac-lateral-left-contenido {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     width: 100%; /* O un valor porcentual */
     padding: 2rem; /* Puedes usar rem o em */
 }
 
-/* Media query para ajustar el scroll en pantallas más pequeñas */
-@media screen and (max-width: 600px) {
-    .este {
-        max-width: 100%; /* Ancho máximo del 100% en pantallas pequeñas */
-        height: 200px; /* Altura ajustada */
-    }
-    .ac-lateral-left-contenido {
-        flex-direction: column; /* Cambiar la dirección de los elementos en dispositivos más pequeños */
-    }
-    .ac-left-opciones{
-        display: flex;
-        flex-direction: column;
-    }
-    .ac-left-nombre{
-        display: grid;
-        grid-template-rows: repeat(auto-fit,minmax(80px, 1fr));
-    }
 
-}
 /*Lado Derecho------------------------------------------------------------------------*/
 .ac-lateral-right{
     display: flex;
@@ -492,6 +462,7 @@
     margin-left: 5rem;
     margin-right: 5rem;
     border-radius: 2rem;
+    width: fit-content;
 }
 
 .ac-lateral-right-titulo{
@@ -533,18 +504,24 @@
     
 
 }
-/*compra.html---------------------------------------------------------------------------------------*/
+
+/*compra.html-tipoEnvio.html--------------------------------------------------------------------------------------*/
 /*compra main lado izquierdo------------------------------------------------------------------------*/
-.compra-main-section{
+.medioPago-body{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.medio-pago-main-section{
+    display: flex;
     float: left;
-    margin-top: 3rem;
-    margin-left: 15rem;
-    margin-bottom: 3rem;
+    flex-direction: column;
     background-color: var(--fondo-cuadros);
+    padding: 1rem;
     border-radius: 2rem;
-    padding: 2rem;
+    margin: 1rem;
+    width: fit-content;
 }
 
 .compra-titulo{
@@ -554,7 +531,7 @@
 
 .compra-dom-article{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     border-radius: 2rem;
     margin-top: 2rem;
     
@@ -607,8 +584,10 @@
     display: flex;
     flex-direction: row-reverse;
 }
-.compra-boton-continuar-p1 button{
-    padding: 1rem 2rem 1rem 2rem;
+.mp-boton-continuar-p1 button {
+    padding: 1rem;
+    margin-left: 1rem;
+    font-size: 1rem;
 }
 /*compra aside lado derecho------------------------------------------------------------------------*/
 .compra-aside-section{
